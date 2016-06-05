@@ -1,45 +1,44 @@
 var answerkey = [
-{name: 'q1', val: 'Halfium'},
-{name: 'q2', val: 'Microsoft'},
-{name: 'q3', val: 'Nibble'},
-{name: 'q4', val: 'Graphical User Interface'},
-{name: 'q5', val: 'Modulation and Demodulation'},
-{name: 'q6', val: '90,000,000'},
-{name: 'q7', val: 'Hibernate'},
-{name: 'q8', val: 'Rattlesnake'},
-{name: 'q9', val: 'Alpaca'},
-{name: 'q10', val: 'Aardvark'}
+{name: '0', val: 'Halfium'},
+{name: '1', val: 'Microsoft'},
+{name: '2', val: 'Nibble'},
+{name: '3', val: 'Graphical User Interface'},
+{name: '4', val: 'Modulation and Demodulation'},
+{name: '5', val: '90,000,000'},
+{name: '6', val: 'Hibernate'},
+{name: '7', val: 'Rattlesnake'},
+{name: '8', val: 'b'},
+{name: '9', val: 'Aardvark'}
 ];
-var useranswers=[];
+var correctans =0 , wrongans =0;
+
+var useranswers = [
+{name: '0', val: ''},
+{name: '1', val: ''},
+{name: '2', val: ''},
+{name: '3', val: ''},
+{name: '4', val: ''},
+{name: '5', val: ''},
+{name: '6', val: ''},
+{name: '7', val: ''},
+{name: '8', val: ''},
+{name: '9', val: ''}
+];
 $(document).on('click', 'input[type="radio"]', function(event) {
 	var name = $(this).attr('name');
 	var val = $(this).val();
-	
-	if (useranswers.length>0){
-		debugger;
-		for (key in useranswers){
-			if (useranswers[key].name == "'"+name+"'") {
-				useranswers[key].val =val;
-			} else {
-				useranswers.push({
-				name: "'"+name+"'",
-				val: "'" + val+"'"
-				});
-    		}
-		} 
-	} else {
-		
-		useranswers.push({
-		name: "'"+name+"'",
-		val: "'" + val+"'"
-		});
-	}
-	
-	//console.log("useranswers"+useranswers);
-//} else {
-//useranswers.push({
-//		name: "'"+name+"'",
-//		val: "'" + val+"'"
-//		});
-//}
+	useranswers[name].val = val;
+	//console.log(useranswers);
 });
+$(".btnsubmit").on('click', function(){
+	debugger
+	for (var i=0; i < answerkey.length; i++){
+		if (answerkey[i].val == useranswers[i].val){
+			correctans++;
+		} else {
+			wrongans++;
+		}
+	}
+	console.log(correctans);
+console.log(wrongans);
+})
