@@ -1,3 +1,29 @@
 .form-group{
-	padding-left:10px;
+	padding:10px;
+}
+.jumbotron{
+	background-color: #000;
+	color:#fff;
+	padding-left:20px;
+
+}
+.main-heading{
+	padding-left:39.5px;
+}
+.btn-submit{
+	margin-left: 400px;
+	margin-bottom: 	20px;
+	position:relative;
+	padding-left: 	20PX;
+	padding-right: 20px;
+
+
+}
+.footer{
+	background-color: #000;
+	text-align: 	center;	
+	font-size:xx-small;
+	background-color: #000;
+	color: 	#fff;
+	padding:20px;
 }
