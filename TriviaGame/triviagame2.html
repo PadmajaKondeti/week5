@@ -1,55 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>StarWars RPG Game</title><!-- Added link to the jQuery Library -->
-    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
- 
-    <!-- Added a link to Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/starwarStyles.css">
-
+<title>TriviaGame-2</title>
+	<!-- Added link to the jQuery Library -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.js"></script>
+	<!-- Added a link to Bootstrap-->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/triviagame2.css">
 </head>
 <body>
 <!-- header and play button area -->
-<div id="main" class="container">
-	<div class="row">
-		<h3> Welcome to</h3> 
-		<h2>StarWars RPG Game!!</h2> 
-	</div>
-	<div id="charYours" class="row">
-		<h4>Your Character</h4>
-		<div id="finn" class="col-sm-3 character" data-sel-status=""><p class="chardetails" >Finn</p>
-			<img id="character1" class="img-thumbnail img-rounded " alt="finn"  src="assets/images/finn.jpg"/>
-			<p class="chardetails">160</p>
-		</div>
-		<div id="ray" class="col-sm-3 character"  data-sel-status=""><p class="chardetails">Ray</p>
-			<img id="character2" class="img-thumbnail img-rounded  " alt="ray"  src="assets/images/ray.jpg"/>
-			<p class="chardetails">180</p>
-		</div>
-		<div id="qui-gon-jinn" class="col-sm-3 character" data-sel-status=""><p class="chardetails" data-sel="false" >Qui Gon Jinn</p>
-			<img id="character3" class="img-thumbnail img-rounded  " alt="qui-gon-jinn.jpg"  src="assets/images/qui-gon-jinn.jpg"/>
-			<p class="chardetails">100</p>
-		</div>
-		<div id="han-solo" class="col-sm-3 character" data-sel-status=""><p class="chardetails">Han Solo</p>
-			<img id="character4" class="img-thumbnail img-rounded  " alt="han-solo"  src="assets/images/han-solo.jpg"/>
-			<p class="chardetails">120</p>
-		</div>
-	</div>
-	<div id="charEnemies" class="row">
-		<h4>Enemies Available To Attack</h4>
-		
-	</div>
-	<div id="fightSection" class="row">
-		<h4>Fight Section</h4>
-		<button type="button" class="btn btn-default">Attack</button>
-	</div>
-	<div id="charDefender" class="row">
-		<h4>Defender</h4>
-	</div>
-	<div id="restart" class="row">
-		<button type="button" class="btn btn-default">Restart</button>
+
+<div class="jumbotron">
+	<div class="main-heading">
+	  <h4>Welcome to </h4>
+	  <h1>Totally Trivial  Trivia!!</h1>
+	  <p class="startpara"><a id="start" class="btn btn-success btn-lg btnstart" href="#" role="button">Start</a></p>
+	  
 	</div>
 </div>
-<script src="assets/js/starwarMain.js"></script>
-</body>	
+<div class="container">
+<form class="form-horizontal">
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+<div class="panel-body">
+	<p id="question"></p>
+	<p id="answer1" class="answer"><a class="" href="#" >Start</a></p>
+	<p id="answer2" class="answer"><a class="" href="#" >Start</a></p>
+	<p id="answer3" class="answer"><a class="" href="#" >Start</a></p>	
+</div>
+</div>
+</form>
+</div>
+<div class="footer">
+	Coding Boot Camp(c)2016, All rights Reserved.
+</div>
+<script type="text/javascript" src="assets/javascript/apptriviagame2.js"></script>
+</body>
 </html>

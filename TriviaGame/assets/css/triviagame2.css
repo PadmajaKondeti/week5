@@ -1,0 +1,41 @@
+.form-group{
+	padding:10px;
+}
+.jumbotron{
+	background-color: #000;
+	color:#fff;
+	padding-left:20px;
+}
+.startpara{
+	color: #5bc0de;
+}
+.answer{
+	float:left;
+	padding:10px;
+}
+.answer:hover{
+	
+    background-color: yellow;
+    border:2px solid #000;
+
+}
+.timer{
+	color:red;
+}
+.main-heading{
+	padding-left:39.5px;
+}
+.btn-submit{
+	margin-bottom: 	20px;
+	position:relative;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.footer{
+	background-color: #000;
+	text-align: 	center;	
+	font-size:xx-small;
+	background-color: #000;
+	color: 	#fff;
+	padding:20px;
+}
